@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <h1>
+    My Cartoon Book!
+  </h1>
+  <button id="img" onclick="update()"> Next Image and Name </button>
+  <img src="https://th.bing.com/th/id/OIP.BTIMGF2AMZkDLCNrGtZmSwHaJp?pid=ImgDet&rs=1" id="imgcartoon">
+   
+</body>
+
+</html>
+
+<script>
+  var changeimg = [
+      "https://th.bing.com/th/id/R.4a54c36084e06d3b0b48eb20b28d7eb3?rik=lFI6q9SSOxOHFQ&riu=http%3a%2f%2fbr.web.img2.acsta.net%2fpictures%2f20%2f12%2f11%2f16%2f23%2f0894648.jpg&ehk=o8d3Xys7MyszmtfDPtsNTZXo5CQZr%2bRC2YlUVpKlJyA%3d&risl=&pid=ImgRaw",
+      "https://i.pinimg.com/originals/4f/d1/f8/4fd1f84c64b9014d1796c1dd874f343d.png",
+      "https://th.bing.com/th/id/OIP.MNduM6WFoDnWwmbNjSPcPwHaEK?pid=ImgDet&rs=1",
+      "https://img.moviesrankings.com/t/p/w1280/l9DIRnIJd1xE04BDw3MYkTiGSl.jpg",
+      "https://th.bing.com/th/id/OIP.BTIMGF2AMZkDLCNrGtZmSwHaJp?pid=ImgDet&rs=1"
+      ];
+      var i=0
+      function update(){
+        document.getElementById("imgcartoon").src= changeimg [i]
+        i=i+1
+        if (i==5) {i=0;}
+
+      }
+      
+</script>
